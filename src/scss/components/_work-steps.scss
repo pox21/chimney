@@ -1,0 +1,38 @@
+.work-steps {
+  padding-top: 80px;
+  padding-bottom: 85px;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    counter-reset: my-awesome-counter;
+    column-count: 2;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    counter-increment: my-awesome-counter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+    &::before {
+      content: counter(my-awesome-counter);
+      color: var(--color-red);
+      width: 45px;
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 1;
+      opacity: 0.2;
+      margin-right: 30px;
+    }
+
+    &:not(:nth-child(3n)) {
+      margin-bottom: 26px;
+    }
+  }
+
+}

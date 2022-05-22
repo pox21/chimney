@@ -1,0 +1,25 @@
+.header {
+  padding-top: 25px;
+
+  &__container {
+    max-width: 1795px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 43px;
+  }
+
+  &__burger-menu {
+    margin-right: 30px;
+  }
+
+  &__nav {
+    margin-right: auto;
+  }
+
+  &__contacts {
+    margin-right: 60px;
+  }
+}

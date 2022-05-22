@@ -1,0 +1,51 @@
+.work-photos {
+  padding-top: 50px;
+  padding-bottom: 136px;
+  &__section-title {
+    margin-bottom: 65px;
+  }
+
+  &__descr {
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  &__item {
+    position: relative;
+    max-height: 260px;
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
+
+    &::before {
+      bottom: 0;
+      left: 0;
+      border-left: 4px solid var(--color-smalt-blue);
+      border-bottom: 4px solid var(--color-smalt-blue);
+    }
+
+    &::after {
+      top: 0;
+      right: 0;
+      border-top: 4px solid var(--color-smalt-blue);
+      border-right: 4px solid var(--color-smalt-blue);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

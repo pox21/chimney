@@ -1,5 +1,5 @@
 {
-  "name": "New Project",
+  "name": "chimney",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -39,8 +39,5 @@
     "sass": "^1.49.11",
     "webpack": "^5.71.0",
     "webpack-stream": "^7.0.0"
-  },
-  "dependencies": {
-    "navigo": "^8.11.1"
   }
 }

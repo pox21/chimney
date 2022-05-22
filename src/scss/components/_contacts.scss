@@ -1,0 +1,30 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 563px;
+  width: 100%;
+
+  &__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: var(--color-black);
+
+    span {
+      font-weight: 400;
+      color: var(--color-smalt-blue);
+    }
+  }
+
+  &__btn {
+    padding: 5px 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: var(--color-mexican-red);
+    border-bottom: 1px dashed var(--color-mexican-red);
+  }
+}

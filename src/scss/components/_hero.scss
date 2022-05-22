@@ -1,0 +1,19 @@
+.hero {
+  padding-top: 56px;
+  padding-bottom: 31px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 85px;
+  }
+
+  &__content {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

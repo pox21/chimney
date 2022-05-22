@@ -1,0 +1,22 @@
+@import "normalize";
+@include normalize();
+@import 'vars.scss';
+@import 'font.scss';
+@import 'default.scss';
+
+@import 'components/header';
+@import 'components/logo';
+@import 'components/burger-menu';
+@import 'components/nav';
+@import 'components/socials';
+@import 'components/contacts';
+@import 'components/user-actions';
+@import 'components/hero';
+@import 'components/breadcrumbs';
+@import 'components/info';
+@import 'components/work-steps';
+@import 'components/peculiarities';
+@import 'components/consultation-form';
+@import 'components/video-section';
+@import 'components/work-photos';
+@import 'components/footer';

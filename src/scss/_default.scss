@@ -94,6 +94,11 @@ fieldset {
   font-size: 60px;
   line-height: 73px;
   color: var(--color-black);
+
+  @include desktop {
+    font-size: 45px;
+    line-height: 55px;
+  }
 }
 
 .red-text {
@@ -116,6 +121,10 @@ fieldset {
   font-size: 40px;
   line-height: 49px;
   color: var(--color-black);
+
+  @include desktop {
+    font-size: 30px;
+  }
 
   &::before {
     content: '';

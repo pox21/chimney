@@ -2,13 +2,26 @@
   padding-top: 80px;
   padding-bottom: 85px;
 
+  @include desktop {
+    padding-top: 20px;
+    padding-bottom: 56px;
+  }
+
   &__title {
     margin-bottom: 60px;
+
+    @include desktop {
+      margin-bottom: 34px;
+    }
   }
 
   &__list {
     counter-reset: my-awesome-counter;
     column-count: 2;
+
+    @include tablet {
+      column-count: 1;
+    }
   }
 
   &__item {

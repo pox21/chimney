@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   padding-top: 25px;
 
   &__container {
@@ -13,6 +14,14 @@
 
   &__burger-menu {
     margin-right: 30px;
+
+    @include headerWidth {
+      margin-left: 20px;
+      margin-right: 0;
+      order: 2;
+      z-index: 4;
+      pointer-events: auto;
+    }
   }
 
   &__nav {
@@ -21,5 +30,9 @@
 
   &__contacts {
     margin-right: 60px;
+  }
+
+  &__user-actions {
+    order: 1;
   }
 }

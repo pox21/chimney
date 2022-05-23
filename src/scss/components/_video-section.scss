@@ -3,6 +3,9 @@
 
   &__section-title {
     margin-bottom: 65px;
+    @include desktop {
+      margin-bottom: 34px;
+    }
   }
 
   &__descr {
@@ -21,11 +24,29 @@
     background-repeat: no-repeat;
     background-position: center top 32px;
     background-image: url('../img/blob-video.svg');
+
+    @include desktop {
+      padding-top: 10px;
+      padding-bottom: 56px;
+    }
+
+    @include tablet {
+      background-image: none;
+    }
   }
 
   &__iframe {
     padding-top: 50px;
     width: 771px;
     height: 488px;
+
+    @include desktop {
+      padding-top: 0;
+    }
+
+    @include tablet {
+      width: 100%;
+      height: 350px;
+    }
   }
 }

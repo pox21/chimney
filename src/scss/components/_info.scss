@@ -6,6 +6,10 @@
   background-position: center right 189px;
   background-image: url('../img/blob.svg');
 
+  @include desktop {
+    background-image: none;
+  }
+
   &__content {
     padding-top: 20px;
     max-width: 572px;
@@ -19,6 +23,10 @@
     line-height: 69px;
     text-transform: uppercase;
     color: var(--color-red);
+
+    @include desktop {
+      font-size: 40px;
+    }
   }
 
   &__list {

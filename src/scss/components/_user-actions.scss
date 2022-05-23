@@ -1,0 +1,27 @@
+.user-actions {
+  display: flex;
+  gap: 16px;
+
+  &__btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    border: 1px solid #e5e5e5;
+    svg {
+      width: 22px;
+      height: 22px;
+      object-fit: cover;
+    }
+  }
+
+  &__amount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(1px);
+  }
+}

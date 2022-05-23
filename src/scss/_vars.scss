@@ -1,13 +1,15 @@
 :root {
-  --color-dark: #000000;
-  --color-dark2: #181818;
-  --color-light: #ffffff;
-  --color-gray: #aeaaaa;
-  --color-primary: #f87c09;
-  --color-primary-light: #ff922e;
-  --color-secondory: #eaeaea;
-  --color-secondory-dark: #6b6b6b;
+  --color-smalt-blue: #4c858b;
+  --color-bg: #fff;
+  --color-black: #000;
+  --color-mexican-red: #ae2236;
+  --color-red: #e33e54;
+  --color-tango: #ea6628;
+  --color-silver: #b1b1b1;
 
+  --color-footer-bg: #0c2f33;
+
+  --footer-height: 74px;
 }
 
 @mixin tablet {

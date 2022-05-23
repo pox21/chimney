@@ -1,8 +1,80 @@
-<header>
-  <h2>Hello header</h2>
-  <div>
-    <svg>
-      <use xlink:href="img/sprite.svg#upload" />
-    </svg>
+<header class="header">
+  <div class="container header__container">
+    <a href="#" class="logo header__logo">
+      <img src="img/site-logo.svg" alt="" class="logo__img">
+    </a>
+    <button class="burger-menu header__burger-menu">
+      <span class="burger-menu__line"></span>
+    </button>
+    <nav class="nav header__nav">
+      <ul class="nav__list list-reset">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Каталог товаров</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">доставка и оплата</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Цены</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="contacts header__contacts">
+      <a href="tel+78125092198" class="contacts__link"><span>+7 (812)</span> 509 21 98</a>
+      <button class="contacts__btn btn-reset">перезвоните мне</button>
+      <div class="socials">
+        <ul class="socials__list list-reset">
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg>
+                <use xlink:href="img/sprite.svg#vk" />
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg>
+                <use xlink:href="img/sprite.svg#telegram" />
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg>
+                <use xlink:href="img/sprite.svg#instagram" />
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg>
+                <use xlink:href="img/sprite.svg#whatsapp" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="user-actions">
+      <button class="user-actions__btn btn-reset">
+        <svg>
+          <use xlink:href="img/sprite.svg#search" />
+        </svg>
+      </button>
+      <button class="user-actions__btn btn-reset">
+        <svg>
+          <use xlink:href="img/sprite.svg#heart" />
+        </svg>
+      </button>
+      <button class="user-actions__btn btn-reset">
+        <svg>
+          <use xlink:href="img/sprite.svg#cart" />
+        </svg>
+        <span class="user-actions__amount amount">10</span>
+      </button>
+    </div>
   </div>
 </header>

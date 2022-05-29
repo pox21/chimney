@@ -2,6 +2,24 @@
   position: relative;
   padding-top: 25px;
 
+  &::after {
+    display: block;
+    background-color: #e5e5e5;
+    height: 1px;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: -15px;
+
+    @include mobile {
+      content: '';
+    }
+  }
+
+  @include mobile {
+    padding-top: 16px;
+  }
+
   &__container {
     max-width: 1795px;
     display: flex;

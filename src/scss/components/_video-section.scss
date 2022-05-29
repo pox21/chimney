@@ -4,7 +4,7 @@
   &__section-title {
     margin-bottom: 65px;
     @include desktop {
-      margin-bottom: 34px;
+      margin-bottom: 27px;
     }
   }
 
@@ -13,6 +13,10 @@
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 30px;
+    @include mobile {
+      font-size: 14px;
+      line-height: 26px;
+    }
   }
 
   &__video-block {
@@ -42,11 +46,15 @@
 
     @include desktop {
       padding-top: 0;
+      height: 424px;
     }
 
     @include tablet {
       width: 100%;
-      height: 350px;
+    }
+
+    @include mobile {
+      height: 163px;
     }
   }
 }

@@ -6,6 +6,10 @@
   background-position: center right 189px;
   background-image: url('../img/blob.svg');
 
+  @include tablet {
+    padding-bottom: 44px;
+  }
+
   @include desktop {
     background-image: none;
   }
@@ -13,6 +17,14 @@
   &__content {
     padding-top: 20px;
     max-width: 572px;
+
+    @include tablet {
+      max-width: 100%;
+    }
+
+    @include mobile {
+      padding-top: 15px;
+    }
   }
 
   &__title {
@@ -25,12 +37,23 @@
     color: var(--color-red);
 
     @include desktop {
+      margin-bottom: 24px;
       font-size: 40px;
+      line-height: 50px;
+    }
+    @include mobile {
+      margin-bottom: 17px;
+      font-size: 30px;
+      line-height: 37px;
     }
   }
 
   &__list {
     padding-left: 30px;
+
+    @include mobile {
+      padding-left: 15px;
+    }
   }
 
   &__item {
@@ -39,6 +62,11 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+
+    @include mobile {
+      font-size: 14px;
+    }
+    
     &:not(:last-child) {
       margin-bottom: 24px;
     }

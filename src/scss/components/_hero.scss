@@ -2,12 +2,33 @@
   padding-top: 56px;
   padding-bottom: 31px;
 
+  @include tablet {
+    padding-top: 78px;
+    padding-bottom: 0;
+  }
+
+  @include mobile {
+    padding-top: 56px;
+  }
+
   &__title {
     margin-bottom: 40px;
+
+    @include tablet {
+      margin-bottom: 32px;
+    }
   }
 
   &__breadcrumbs {
     margin-bottom: 85px;
+
+    @include tablet {
+      margin-bottom: 62px;
+    }
+
+    @include mobile {
+      margin-bottom: 16px;
+    }
   }
 
   &__content {
@@ -15,5 +36,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 26px;
+    }
   }
 }

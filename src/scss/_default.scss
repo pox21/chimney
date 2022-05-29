@@ -76,6 +76,10 @@ iframe {
   max-width: 1240px;
   padding: 0 10px;
   margin: 0 auto;
+
+  @include tablet {
+    padding: 0 16px;
+  }
 }
 
 .hidden {
@@ -98,6 +102,12 @@ fieldset {
   @include desktop {
     font-size: 45px;
     line-height: 55px;
+  }
+  @include mobile {
+    margin-bottom: 11px;
+    padding: 0 19px 0 0;
+    font-size: 30px;
+    line-height: 37px;
   }
 }
 
@@ -124,6 +134,11 @@ fieldset {
 
   @include desktop {
     font-size: 30px;
+  }
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 37px;
   }
 
   &::before {

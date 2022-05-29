@@ -2,7 +2,7 @@
   max-width: 320px;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 25px;
   padding: 50px 15px;
   position: absolute;
@@ -13,7 +13,12 @@
   transform: translateY(-100%);
   transition: transform .3s ease-in-out;
 
+  @media (max-width: 500px) {
+    max-width: 100%;
+  }
+
   .nav__list, .contacts {
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;

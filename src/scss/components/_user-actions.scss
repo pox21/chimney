@@ -2,6 +2,10 @@
   display: flex;
   gap: 16px;
 
+  @include tablet {
+    gap: 26px;
+  }
+
   &__btn {
     position: relative;
     display: inline-flex;
@@ -11,6 +15,12 @@
     height: 56px;
     border-radius: 100%;
     border: 1px solid #e5e5e5;
+
+    @include mobile {
+      width: 44px;
+      height: 44px;
+    }
+
     svg {
       width: 22px;
       height: 22px;
@@ -23,5 +33,8 @@
     top: 0;
     right: 0;
     transform: translateX(1px);
+    @include mobile {
+      right: -4px;
+    }
   }
 }

@@ -10,6 +10,11 @@
   background-color: var(--color-bg);
   pointer-events: none;
 
+  @include mobile {
+    width: 44px;
+    height: 44px;
+  }
+
   &__line {
     display: block;
     width: 22px;
@@ -23,14 +28,27 @@
       width: 22px;
       height: 2px;
       background-color: var(--color-smalt-blue);
+      @include mobile {
+        width: 18px;
+      }
     }
 
     &::before {
       top: 16px;
+      @include mobile {
+        top: 13px;
+      }
     }
 
     &::after {
       bottom: 16px;
+      @include mobile {
+        bottom: 12px;
+      }
+    }
+
+    @include mobile {
+      width: 18px;
     }
   }
 }

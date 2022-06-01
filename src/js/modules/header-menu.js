@@ -5,6 +5,7 @@ const nav = document.querySelector('.header__nav');
 const contacts = document.querySelector('.header__contacts');
 const favoritesBtn = document.querySelector("#favorites");
 const searchBtn = document.querySelector("#search");
+const themes  = document.querySelector('.themes');
 
 const mobileMenuActive = () => {
 
@@ -22,6 +23,7 @@ const mobileMenuActive = () => {
   headerContainer.append(mobileMenu);
   mobileMenu.append(nav);
   mobileMenu.append(contacts);
+  mobileMenu.append(themes);
 
   btn.addEventListener("click", () => {
     mobileMenu.classList.toggle("mobile-menu_active");
@@ -31,6 +33,7 @@ const mobileMenuActive = () => {
 const mobileMenuDeactive = (selector) => {
   headerContainer.append(contacts);
   headerContainer.append(nav);
+  headerContainer.append(themes);
   selector.remove();
 }
 

@@ -1,0 +1,42 @@
+.themes {
+
+  &__label {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--color-smalt-blue);
+    background-color: var(--color-bg);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      display: block;
+      width: 14px;
+      height: 14px;
+      border-radius: 100%;
+      background-color: var(--color-smalt-blue);
+      transition: transform .3s ease;
+    }
+
+    &::after {
+      content: 'Темная тема';
+      display: block;
+      font-size: 10px;
+      position: absolute;
+      left: -200%;
+      color: var(--color-black);
+    }
+  }
+
+  &__input:checked + &__label::before {
+    transform: translateX(20px);
+  }
+
+  &__input:checked + &__label::after {
+    content: 'Светлая тема';
+  }
+}

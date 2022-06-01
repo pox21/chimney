@@ -12,18 +12,26 @@
   --footer-height: 74px;
 }
 
+@mixin mobile {
+  @media (max-width: 568px) {
+    @content
+  }
+}
+
 @mixin tablet {
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     @content
   }
 }
-@mixin laptop {
-  @media (min-width: 1024px) {
+
+@mixin headerWidth {
+  @media (max-width: 1700px) {
     @content
   }
 }
+
 @mixin desktop {
-  @media (min-width: 1280px) {
+  @media (max-width: 1210px) {
     @content
   }
 }

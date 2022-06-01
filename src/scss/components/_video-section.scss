@@ -3,6 +3,9 @@
 
   &__section-title {
     margin-bottom: 65px;
+    @include desktop {
+      margin-bottom: 27px;
+    }
   }
 
   &__descr {
@@ -10,6 +13,10 @@
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 30px;
+    @include mobile {
+      font-size: 14px;
+      line-height: 26px;
+    }
   }
 
   &__video-block {
@@ -21,11 +28,33 @@
     background-repeat: no-repeat;
     background-position: center top 32px;
     background-image: url('../img/blob-video.svg');
+
+    @include desktop {
+      padding-top: 10px;
+      padding-bottom: 56px;
+    }
+
+    @include tablet {
+      background-image: none;
+    }
   }
 
   &__iframe {
     padding-top: 50px;
     width: 771px;
     height: 488px;
+
+    @include desktop {
+      padding-top: 0;
+      height: 424px;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+
+    @include mobile {
+      height: 163px;
+    }
   }
 }

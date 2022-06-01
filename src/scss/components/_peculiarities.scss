@@ -2,8 +2,21 @@
   padding-top: 20px;
   padding-bottom: 127px;
 
+  @include desktop {
+    padding-bottom: 69px;
+  }
+  @include mobile {
+    padding-bottom: 36px;
+  }
+
   &__section-title {
     margin-bottom: 50px;
+    @include desktop {
+      margin-bottom: 30px;
+    }
+    @include mobile {
+      margin-bottom: 25px;
+    }
   }
 
   &__descr {
@@ -12,12 +25,29 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
+
+    @include mobile {
+      margin-bottom: 24px;
+      font-size: 14px;
+      line-height: 26px;
+    }
   }
 
   &__list {
     display: flex;
     justify-content: space-between;
     margin-bottom: 98px;
+    flex-wrap: wrap;
+
+    @include desktop {
+      margin-bottom: 48px;
+      gap: 26px;
+      justify-content: space-around;
+    }
+
+    @include mobile {
+      margin-bottom: 41px;
+    }
   }
 
   &__title {
@@ -28,6 +58,16 @@
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
+
+    @include desktop {
+      margin-bottom: 4px;
+      font-size: 40px;
+    }
+
+    @include mobile {
+      font-size: 22px;
+      line-height: 30px;
+    }
   }
 
   &__subtitle {
@@ -36,10 +76,26 @@
     font-size: 22px;
     line-height: 40px;
     text-align: center;
+    @include desktop {
+      margin-bottom: 27px;
+      font-size: 16px;
+      line-height: 30px;
+    }
+    @include mobile {
+      margin-bottom: 21px;
+      font-size: 14px;
+      line-height: 26px;
+    }
   }
 
   &__socials {
     margin-bottom: 40px;
+    @include tablet {
+      margin-bottom: 32px;
+    }
+    @include mobile {
+      margin-bottom: 25px;
+    }
   }
 
 }
@@ -48,11 +104,21 @@
   max-width: 387px;
   width: 100%;
 
+  @include desktop {
+    max-width: 352px;
+    text-align: center;
+  }
+
   &__icon {
     display: block;
     width: 79px;
     height: 79px;
     margin-bottom: 34px;
+
+    @include desktop {
+      margin: 0 auto 26px;
+      text-align: center;
+    }
 
     svg {
       width: 100%;
@@ -67,6 +133,12 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
+
+    @include tablet {
+      margin-bottom: 0;
+      font-size: 18px;
+      line-height: 30px;
+    }
   }
 
   &__descr {
@@ -74,5 +146,16 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
+
+    @include tablet {
+      padding: 0 10px;
+      font-size: 14px;
+      line-height: 26px;
+
+      & .red-text {
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
   }
 }

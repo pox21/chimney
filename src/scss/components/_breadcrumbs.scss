@@ -5,43 +5,46 @@
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
 
+  @include tablet {
+    flex-wrap: wrap;
+  }
+
+  @include mobile {
+    padding: 8px 2px;
+  }
+
   &__item {
     position: relative;
+    margin-bottom: 2px;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     color: var(--color-silver);
 
-
-
     &:not(:last-child) {
       margin-right: 20px;
     }
 
-    &:not(:first-child) {
-      &::before {
+    &:not(:last-child) {
+      &::after {
         content: '';
         display: block;
-        width: 6px;
-        height: 6px;
+        width: 4.5px;
+        height: 4.5px;
       }
     }
 
-    &::before {
+    &::after {
       position: absolute;
-      left: -16px;
-      top: 40%;
+      right: -10px;
+      top: 45%;
       transform: rotate(45deg) translateY(-50%);
-      border-top: 1.5px solid var(--color-silver);
-      border-right: 1.5px solid var(--color-silver);
+      border-top: 1.5px solid var(--color-smalt-blue);
+      border-right: 1.5px solid var(--color-smalt-blue);
     }
 
     &_active {
       color: var(--color-smalt-blue);
-
-      &::before {
-        border-color: var(--color-smalt-blue);
-      }
     }
 
   }
